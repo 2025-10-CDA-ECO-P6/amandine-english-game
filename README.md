@@ -1,1 +1,1 @@
-# Amandine-English-game
+# amandine-english-game

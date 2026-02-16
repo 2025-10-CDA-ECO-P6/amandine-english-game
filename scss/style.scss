@@ -1,0 +1,11 @@
+@use "vars/variables";
+@use "mixins/layout" as mix;
+@use "layout/nav";
+@use "ui/typography";
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: variables.$background-color;
+  margin: 0;
+  padding: 2rem;
+}

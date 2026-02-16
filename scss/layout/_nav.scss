@@ -1,0 +1,31 @@
+@use "../vars/variables";
+@use "../mixins/layout" as mix;
+
+.nav {
+  background-color: variables.$primary-color;
+  padding: 1rem;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @include mix.center(column);
+    gap: 1rem;
+  }
+
+  &__item {
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: variables.$breakpoint-md) {
+    &__list {
+      @include mix.center(row);
+    }
+  }
+}
