@@ -3,3 +3,103 @@ $background-color: #f4f4f4;
 $text-color: #222;
 
 $breakpoint-md: 640px;
+
+
+
+// ============================================================
+// COLORS
+// ============================================================
+
+$background-color: #f5f5f5;
+$text-color: #1a1a1a;
+
+$primary100: #cffefb;
+$primary200: #a5fcf8;
+$primary300: #68f8f3;
+$primary400: #23edea;
+$primary500: #07d3d3;
+$primary600: #09aab1;
+$primary700: #0f878f;
+$primary800: #166f78;
+$primary900: #165963;
+$primary950: #083c44;
+
+$secondary100: #fff3c6;
+$secondary200: #ffe588;
+$secondary300: #ffd34a;
+$secondary400: #ffbd1d;
+$secondary500: #f99c07;
+$secondary600: #dd7402;
+$secondary700: #b75106;
+$secondary800: #943d0c;
+$secondary900: #7a330d;
+$secondary950: #461902;
+
+$neutral0:   #ffffff;
+$neutral100: #f5f5f5;
+$neutral150: #ededed;
+$neutral200: #e6e6e6;
+$neutral300: #d6d6d6;
+$neutral400: #a5a5a5;
+$neutral500: #767676;
+$neutral600: #575757;
+$neutral700: #434343;
+$neutral800: #292929;
+$neutral900: #1a1a1a;
+$neutral950: #101010;
+
+$other_warning:           #ff8a22;
+$other_warning-hover:     #ff7800;
+$other_blue-mds-logo:     #43bccb;
+$other_blue-mds-logo-icon:#65c8d5;
+
+// Semantic aliases
+$background-color: $neutral100;
+$text-color:       $neutral900;
+
+// ============================================================
+// BREAKPOINTS
+// ============================================================
+
+$breakpoint-sm:       480px;
+$breakpoint-md:       640px;
+$breakpoint-lg:       900px;
+$breakpoint-xl:      1200px;
+$width-menu-xl:      1200px;
+
+// ============================================================
+// SPACING SCALE
+// ============================================================
+
+$spacing-unit: 8px;
+
+$spacing-1:  $spacing-unit * 1;   //  8px
+$spacing-2:  $spacing-unit * 2;   // 16px
+$spacing-3:  $spacing-unit * 3;   // 24px
+$spacing-4:  $spacing-unit * 4;   // 32px
+$spacing-5:  $spacing-unit * 5;   // 40px
+$spacing-6:  $spacing-unit * 6;   // 48px
+$spacing-7:  $spacing-unit * 7;   // 56px
+$spacing-8:  $spacing-unit * 8;   // 64px
+$spacing-9:  $spacing-unit * 9;   // 72px
+$spacing-10: $spacing-unit * 10;  // 80px
+$spacing-12: $spacing-unit * 12;  // 96px
+$spacing-15: $spacing-unit * 15;  // 120px
+
+// ============================================================
+// RADIUS
+// ============================================================
+
+$radius-sm:  6px;
+$radius-md:  10px;
+$radius-lg:  16px;
+$radius-xl:  24px;
+$radius-full: 9999px;
+
+// ============================================================
+// SHADOWS
+// ============================================================
+
+$shadow-sm:  0 1px 4px rgba(0, 0, 0, 0.06);
+$shadow-md:  0 2px 16px rgba(0, 0, 0, 0.08);
+$shadow-lg:  0 4px 32px rgba(0, 0, 0, 0.12);
