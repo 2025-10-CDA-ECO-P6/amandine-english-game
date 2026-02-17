@@ -155,3 +155,96 @@ ul {
     padding: v.$spacing-6 0 calc(#{v.$spacing-6} + 60px);
   }
 }
+
+// ============================================================
+// BENEFITS SECTION
+// ============================================================
+
+.benefits {
+  background-color: v.$neutral0;
+  padding: v.$spacing-10 0;
+  border-radius: 24px 24px 0 0;
+  margin-top: -24px;
+  position: relative;
+  z-index: 1;
+
+  &__title {
+    text-align: center;
+    color: v.$neutral900;
+    margin-bottom: v.$spacing-6;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: v.$spacing-4;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-3;
+  }
+
+  &__card-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: v.$neutral150;
+    border-radius: v.$radius-lg;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__card-title {
+    color: v.$neutral900;
+    margin-bottom: v.$spacing-1;
+  }
+
+  &__card-desc {
+    color: v.$neutral600;
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 400;
+  }
+}
+
+// ============================================================
+// RESPONSIVE BENEFITS (single column layout)
+// ============================================================
+
+@media screen and (max-width: 900px) {
+  .benefits {
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: v.$spacing-5;
+    }
+
+    &__card {
+      flex-direction: column;
+    }
+
+    &__card-img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+    }
+  }
+}
+
+@media screen and (max-width: v.$breakpoint-md) {
+  .benefits {
+    padding: v.$spacing-6 0 calc(#{v.$spacing-6} + 60px);
+
+    &__title {
+      font-size: 24px;
+      line-height: 1.3;
+    }
+  }
+}
