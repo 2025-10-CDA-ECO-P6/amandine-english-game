@@ -1,7 +1,5 @@
 @use "vars/variables" as v;
-@use "mixins/layout" as mix;
 @use "layout/nav";
-@use "ui/typography";
 
 // ============================================================
 // RESET & BASE
@@ -90,43 +88,6 @@ ul {
     border-radius: 16px;
   }
 
-  &__video-placeholder {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, v.$primary800 0%, v.$primary700 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 180px;
-  }
-
-  &__video-play {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: rgba(v.$neutral0, 0.15);
-    border: 2px solid rgba(v.$neutral0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.2s;
-
-    &:hover {
-      background: rgba(v.$neutral0, 0.25);
-    }
-  }
-
-  &__video-triangle {
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 18px solid v.$neutral0;
-    margin-left: 4px;
-  }
-
   &__content {
     grid-area: content;
     display: flex;
@@ -191,6 +152,6 @@ ul {
 // Mobile : nav bottom bar → padding bas
 @media screen and (max-width: v.$breakpoint-md) {
   .hero {
-    padding: v.$spacing-6 0 calc(v.$spacing-6 + 60px);
+    padding: v.$spacing-6 0 calc(#{v.$spacing-6} + 60px);
   }
 }
